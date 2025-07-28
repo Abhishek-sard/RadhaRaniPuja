@@ -15,7 +15,7 @@ const Navbar = () => {
               <img 
                 src={LOGO} 
                 alt="Company Logo" 
-                className="h-14 w-auto"  // Increased from h-8 to h-10
+                className="h-14 w-auto"  
               />
             </a>
           </div>
