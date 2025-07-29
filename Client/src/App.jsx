@@ -1,12 +1,12 @@
 import React from 'react'
-import Navbar from './Components/Navbar';
 import ImageSlider from './Components/ImageSlider';
+import FeaturedProducts from './Components/FeaturedProduct';
 
 const App = () => {
   return (
     <div>
-      <Navbar />
       <ImageSlider />
+      <FeaturedProducts/>
 
     </div>
 

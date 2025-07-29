@@ -1,14 +1,17 @@
 import React from 'react'
 import Image from '../assets/logo.jpg'
-import Navbar from './Navbar' // Make sure to import your Navbar component
+import Navbar from './Navbar'
 
 const ImageSlider = () => {
   return (
-    <div className="min-h-screen flex flex-col m-1 ">
-     
+    <div className="flex flex-col min-h-screen">
+      {/* Navbar with fixed height */}
+      <div className="h-[15vh]"> {/* 15vh height as per your requirement */}
+        <Navbar />
+      </div>
       
-      {/* Full-screen image slider */}
-      <div className="flex-grow relative w-full h-[calc(100vh-15vh)]"> {/* Adjust height based on navbar height */}
+      {/* Image slider that takes remaining space below navbar */}
+      <div className="flex-grow relative w-full"> {/* Removed h-[calc(100vh-15vh)] */}
         {/* Carousel container */}
         <div className="relative h-full w-full">
           {/* Slide 1 */}
