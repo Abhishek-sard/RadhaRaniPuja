@@ -1,9 +1,15 @@
 import React from 'react'
 import Navbar from './Components/Navbar';
+import ImageSlider from './Components/ImageSlider';
 
 const App = () => {
   return (
-    <Navbar/>
+    <div>
+      <Navbar />
+      <ImageSlider />
+
+    </div>
+
   )
 }
 
