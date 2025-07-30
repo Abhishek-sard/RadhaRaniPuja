@@ -90,6 +90,7 @@ const ImageSlider = () => {
         </button>
       </div>
     </div>
+    //importing the FeaturedProduct 
   )
 }
 
