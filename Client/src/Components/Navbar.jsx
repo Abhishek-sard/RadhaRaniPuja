@@ -65,10 +65,10 @@ const Navbar = () => {
                 shop
               </a>
               <a
-                href="/about"
+                href="/Blog"
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
               >
-                About Us
+                 Blog
               </a>
               <a
                 href="/contact"
@@ -104,10 +104,10 @@ const Navbar = () => {
             Shop
           </a>
           <a
-            href="/about"
+            href="/Blog"
             className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-white hover:bg-blue-600"
           >
-            About Us
+            Blog
           </a>
           <a
             href="/contact"

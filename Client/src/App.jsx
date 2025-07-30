@@ -8,6 +8,8 @@ import FeaturedProducts from './Components/FeaturedProduct'
 
 import Shop from './Pages/Shop/Shop';
 
+import Blog from './Pages/Blog/Blog';
+
 // Home component with wrapped children
 function Home() {
   return (
@@ -26,6 +28,14 @@ function Shops () {
   )
 }
 
+function Blogging () {
+  return(
+    <>
+    <Blog/>
+    </>
+  )
+}
+
 
 
 
@@ -37,6 +47,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Shop" element={<Shop />} />
+        <Route path="/Blog" element={<Blog />} />
       </Routes>
       <Footer />
     </Router>
