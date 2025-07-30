@@ -107,6 +107,50 @@ const Shop = () => {
                 </div>
             </div>
 
+            {/******New Arrivals****** */}
+              <div className="bg-white p-12 rounded-md ">
+                <div className="flex flex-col justify-center items-center mb-10 transition-all duration-700">
+                    <h1 className="text-2xl font-bold">New Arrivals </h1>
+                </div>
+
+                {/* Card Slider */}
+                <div className="relative">
+                    {/* Prev Button */}
+                    <button
+                        onClick={handlePrev}
+                        className="absolute left-0 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-100 z-10"
+                    >
+                        <FaChevronLeft />
+                    </button>
+
+                    {/* Visible Cards */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 overflow-hidden">
+                        {products.slice(startIndex, startIndex + visibleCount).map(product => (
+                            <div
+                                key={product.id}
+                                className="bg-white p-4 rounded-lg shadow text-center transform transition-transform hover:scale-105"
+                            >
+                                <img
+                                    src={product.image}
+                                    alt={product.name}
+                                    className="w-full h-28 object-cover mb-2 rounded"
+                                />
+                                <h2 className="text-lg font-semibold">{product.name}</h2>
+                                <p className="text-gray-600">{product.price}</p>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Next Button */}
+                    <button
+                        onClick={handleNext}
+                        className="absolute right-0 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-100 z-10"
+                    >
+                        <FaChevronRight />
+                    </button>
+                </div>
+            </div>
+
         </div>
     );
 };
