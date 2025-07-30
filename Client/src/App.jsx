@@ -10,6 +10,8 @@ import Shop from './Pages/Shop/Shop';
 
 import Blog from './Pages/Blog/Blog';
 
+import Contact from './Pages/Contact/Contact';
+
 // Home component with wrapped children
 function Home() {
   return (
@@ -24,6 +26,14 @@ function Shops () {
   return(
     <>
     <Shop/>
+    </>
+  )
+}
+
+function Contacts () {
+  return(
+    <>
+    <Contact/>
     </>
   )
 }
@@ -48,6 +58,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Shop" element={<Shop />} />
         <Route path="/Blog" element={<Blog />} />
+        <Route path="/Contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>
