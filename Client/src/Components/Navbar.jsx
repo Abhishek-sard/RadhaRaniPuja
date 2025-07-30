@@ -59,10 +59,10 @@ const Navbar = () => {
                 Home
               </a>
               <a
-                href="/Products"
+                href="/Shop"
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
               >
-                Products
+                shop
               </a>
               <a
                 href="/about"
@@ -101,7 +101,7 @@ const Navbar = () => {
             href="/products"
             className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-white hover:bg-blue-600"
           >
-            Products
+            Shop
           </a>
           <a
             href="/about"
