@@ -7,7 +7,6 @@ const ImageSlider = () => {
     <div className="flex flex-col min-h-screen">
       {/* Navbar with fixed height */}
       <div className="h-[15vh]"> {/* 15vh height as per your requirement */}
-        <Navbar />
       </div>
       
       {/* Image slider that takes remaining space below navbar */}
