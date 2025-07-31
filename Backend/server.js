@@ -1,12 +1,11 @@
 const app = require('./uploads/app');
-const connectDB = require('./config/db');
-const PORT = process.env.PORT || 5000;
+const mongoose = require('mongoose');
+require('dotenv').config();
 
-
-//connect to mongoDB
-connectDB();
-
-//start server
-app.listen(PORT, () => {
-    console.log(`server running on port ${PORT}`);
-});
+mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => {
+    app.listen(process.env.PORT || 5000, () => {
+      console.log('Server is running...');
+    });
+  })
+  .catch(err => console.log(err));

@@ -13,6 +13,7 @@ import Blog from './Pages/Blog/Blog';
 import Contact from './Pages/Contact/Contact';
 
 import Dashboard from './Dashboard/Dashboard'
+import ProductUploadDashboard from './Components/ProductUploadDashboard'
 
 // Home component with wrapped children
 function Home() {
@@ -62,6 +63,7 @@ function App() {
         <Route path="/Blog" element={<Blog />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/dashboard" element={<Dashboard />} /> {/* Add Dashboard route */}
+        <Route path="/DashboardUpload" element={<ProductUploadDashboard/>}/>
 
       </Routes>
       <Footer />
