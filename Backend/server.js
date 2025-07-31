@@ -1,4 +1,4 @@
-const app = require('./app');
+const app = require('./uploads/app');
 const connectDB = require('./config/db');
 const PORT = process.env.PORT || 5000;
 
