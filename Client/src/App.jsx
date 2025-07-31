@@ -12,6 +12,8 @@ import Blog from './Pages/Blog/Blog';
 
 import Contact from './Pages/Contact/Contact';
 
+import Dashboard from './Dashboard/Dashboard'
+
 // Home component with wrapped children
 function Home() {
   return (
@@ -22,26 +24,26 @@ function Home() {
   )
 }
 
-function Shops () {
-  return(
+function Shops() {
+  return (
     <>
-    <Shop/>
+      <Shop />
     </>
   )
 }
 
-function Contacts () {
-  return(
+function Contacts() {
+  return (
     <>
-    <Contact/>
+      <Contact />
     </>
   )
 }
 
-function Blogging () {
-  return(
+function Blogging() {
+  return (
     <>
-    <Blog/>
+      <Blog />
     </>
   )
 }
@@ -59,6 +61,8 @@ function App() {
         <Route path="/Shop" element={<Shop />} />
         <Route path="/Blog" element={<Blog />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="/dashboard" element={<Dashboard />} /> {/* Add Dashboard route */}
+
       </Routes>
       <Footer />
     </Router>
