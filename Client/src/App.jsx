@@ -1,13 +1,16 @@
+import React from 'react';
+import Navbar from './Components/Navbar';
+import { BrowserRouter } from 'react-router-dom';
 
-import React from 'react'
-
-const App = () => {
+function App() {
   return (
-    <div className='text-center '>
-      <h1 className='text-primary'>Welcome to Radha Rani Puja</h1>
-      
-    </div>
-  )
+    <BrowserRouter>
+      <Navbar />
+  </BrowserRouter>
+
+
+
+  );
 }
 
-export default App
+export default App;
