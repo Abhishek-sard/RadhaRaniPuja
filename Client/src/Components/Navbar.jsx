@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { FaFacebook, FaInstagram, FaBars, FaTimes, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
-import Logo from '../../public/logo.jpg';
+import Logo from '/logo.jpg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
