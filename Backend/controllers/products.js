@@ -2,9 +2,7 @@ const Product = require('../models/Product');
 const fs = require('fs');
 const path = require('path');
 
-// @desc    Get all products
-// @route   GET /api/products
-// @access  Public
+
 exports.getProducts = async (req, res, next) => {
   try {
     const products = await Product.find();
@@ -47,9 +45,6 @@ exports.getProduct = async (req, res, next) => {
   }
 };
 
-// @desc    Create product
-// @route   POST /api/products
-// @access  Private
 exports.createProduct = async (req, res, next) => {
   try {
     // Handle image upload (assuming you're using base64 encoded images from frontend)

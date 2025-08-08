@@ -52,6 +52,9 @@ const Navbar = () => {
           {/* Centered Navigation Links */}
           <div className="hidden md:flex md:items-center md:justify-center flex-1">
             <div className="flex space-x-8">
+
+              {/***when click in the another page there should be hover fixed */}
+
               <a
                 href="/"
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
@@ -60,13 +63,13 @@ const Navbar = () => {
               </a>
               <a
                 href="/Shop"
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
+                className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium "
               >
                 shop
               </a>
               <a
                 href="/Blog"
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
+                className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium "
               >
                  Blog
               </a>
@@ -80,11 +83,7 @@ const Navbar = () => {
           </div>
           
           {/* Add to Cart Button (Right Side) */}
-          <div className="hidden md:block">
-            <button className="flex items-center space-x-1 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition duration-300">
-              <FiShoppingCart className="h-5 w-5" />
-            </button>
-          </div>
+
         </div>
       </div>
       
