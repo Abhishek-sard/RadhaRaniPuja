@@ -10,16 +10,16 @@ import home8 from '../assets/home8.jpg';
 
 const Products = () => {
     const images = [
-        { id: 1, src: home,  text: "Laptop 1", price: "$999" },
-        { id: 2, src: home2, text: "Laptop 2", price: "$1099" },
-        { id: 3, src: home3,  text: "Laptop 3", price: "$899" },
-        { id: 4, src: home4,  text: "Laptop 4", price: "$1299" },
-        { id: 5, src: home5, text: "Laptop 5", price: "$799" },
-        { id: 6, src: home6,  text: "Laptop 6", price: "$1499" },
-        { id: 7, src: home7,  text: "Laptop 7", price: "$1199" },
-        { id: 8, src: home8,  text: "Laptop 8", price: "$999" },
+        { id: 1, src: home, text: "Laptop 1", price: "Rs. 999" },
+        { id: 2, src: home2, text: "Laptop 2", price: "Rs. 1099" },
+        { id: 3, src: home3, text: "Laptop 3", price: "Rs. 899" },
+        { id: 4, src: home4, text: "Laptop 4", price: "Rs. 1299" },
+        { id: 5, src: home5, text: "Laptop 5", price: "Rs. 799" },
+        { id: 6, src: home6, text: "Laptop 6", price: "Rs. 1499" },
+        { id: 7, src: home7, text: "Laptop 7", price: "Rs. 1199" },
+        { id: 8, src: home8, text: "Laptop 8", price: "Rs. 999" },
     ]
-    
+
     return (
         <div className="p-8">
             <h2 className="text-4xl font-bold mb-6  m-9 text-center">Our Products</h2>
@@ -34,20 +34,20 @@ const Products = () => {
                             alt={image.text}
                             className="w-40 h-40 object-cover rounded-md border border-gray-200 shadow-sm hover:scale-105 transition-transform"
                         />
-                        
+
                         {/* Product Info */}
                         <div className="text-center">
                             <p className="font-medium text-gray-800">{image.text}</p>
                             <p className="text-gray-600 text-sm">{image.price}</p>
                         </div>
-                        
+
                         {/* Button */}
-                        <button 
-                            className="mt-2 px-4 py-2 border-color: inherit;
+                        <button
+                            className="mt-2 px-4 py-2 ;
  bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors shadow-sm"
                             onClick={() => console.log(`Added ${image.text} to cart`)}
                         >
-                           view Details
+                            view Details
                         </button>
                     </div>
                 ))}
