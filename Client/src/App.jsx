@@ -7,6 +7,7 @@ import Footer from './Components/Footer';
 import Contact from './Pages/Contact/Contact';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NewArrival from './Components/NewArrival';
+import Dashboard from './AdminDashboard/Dashboard/Dashboard';
 
 function Home() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} /> 
+        <Route path='/Dashboard' element={<Dashboard/>}/>
       </Routes>
       <Footer />
     </Router>
